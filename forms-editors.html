@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Forms / Editors - NiceAdmin Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/Favicon.jpg" rel="icon">
+  <link href="assets/img/Favicon.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/personal-medico.css" rel="stylesheet" >
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Updated: Apr 20 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="dashboard.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo-oficial.png" alt="">
+        <span class="d-none d-lg-block">Corpoclinic</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar..." title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-bell fa-shake"></i>
+            <span class="badge bg-primary badge-number">6</span>
+          </a><!-- End Notification Icon -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="fa-solid fa-message fa-bounce"></i>
+            <span class="badge bg-success badge-number">4</span>
+          </a><!-- End Messages Icon -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+              <span>Medico General</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Mi Perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="fa-solid fa-gear fa-spin"></i>
+                <span>Configuración</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>¿Necesitas Ayuda?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Cerrar Sesión</span>
+              </a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Inicio</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Formulario</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="forms-elements.html">
+              <i class="bi bi-circle"></i><span>Recetas Médicas</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-layouts.html">
+              <i class="bi bi-circle"></i><span>Nuevo Paciente</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-editors.html" class="active">
+              <i class="bi bi-circle"></i><span>Personal Medico</span>
+            </a>
+          </li>
+          <li>
+            <a href="forms-validation.html">
+              <i class="bi bi-circle"></i><span>Ordenes Medicas</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <!--Inicio del main-->
+  <div class="main-content p-4">
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between align-items-center mt-5">
+        <h1 class="h1">Nuevo Personal Medico</h1>
+        <input type="date" class="form-control w-auto" placeholder="20 de Junio 2024">
+      </div>
+      <div class="card card-custom border-0 p-4">
+        <form>
+          <!-- Nombres -->
+          <div class="row mb-3">
+            <div class="col">
+              <label for="primer-nombre" class="form-label">Primer nombre*</label>
+              <input type="text" class="form-control" id="primer-nombre" placeholder="Primer nombre" required>
+            </div>
+            <div class="col">
+              <label for="segundo-nombre" class="form-label">Segundo nombre</label>
+              <input type="text" class="form-control" id="segundo-nombre" placeholder="Segundo nombre">
+            </div>
+          </div>
+
+          <!-- Apellidos -->
+          <div class="row mb-3">
+            <div class="col">
+              <label for="primer-apellido" class="form-label">Primer apellido*</label>
+              <input type="text" class="form-control" id="primer-apellido" placeholder="Primer apellido" required>
+            </div>
+            <div class="col">
+              <label for="segundo-apellido" class="form-label">Segundo apellido</label>
+              <input type="text" class="form-control" id="segundo-apellido" placeholder="Segundo apellido">
+            </div>
+          </div>
+
+          <!-- Documentos -->
+          <div class="mb-3">
+            <label for="tipo-documento" class="form-label">Tipo de documento*</label>
+            <select class="form-select" id="tipo-documento" required>
+              <option selected disabled>- Seleccionar -</option>
+              <option value="CC">Cédula de Ciudadanía</option>
+              <option value="TI">Tarjeta de Identidad</option>
+              <option value="CE">Cédula de Extranjería</option>
+              <option value="PA">Pasaporte</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="numero-documento" class="form-label">No. de Documento*</label>
+            <input type="text" class="form-control" id="numero-documento" placeholder="Número de Documento" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="numero-registro-medico" class="form-label">Número de Registro Médico</label>
+            <input type="text" class="form-control" id="numero-registro-medico" placeholder="Número de Registro Médico" required>
+          </div>
+
+          <!-- Especialidad -->
+          <div class="mb-3">
+            <label for="especialidad" class="form-label">Especialidad*</label>
+            <select class="form-select" id="especialidad" required>
+              <option selected disabled>- Seleccionar -</option>
+              <option value="Medicina General">Medicina General</option>
+              <option value="Cardiología">Cardiología</option>
+              <option value="Dermatología">Dermatología</option>
+              <option value="Ginecología">Ginecología</option>
+              <option value="Pediatría">Pediatría</option>
+              <option value="Psiquiatría">Psiquiatría</option>
+              <option value="Oftalmología">Oftalmología</option>
+              <option value="Neurología">Neurología</option>
+              <option value="Traumatología">Traumatología</option>
+              <!-- Agregar más especialidades según sea necesario -->
+            </select>
+          </div>
+
+          <!-- Residencia -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="departamento" class="form-label">Departamento donde reside*</label>
+              <select class="form-select" id="departamento" required>
+                <option selected disabled>- Seleccionar -</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <!-- Agregar más opciones según sea necesario -->
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="ciudad" class="form-label">Ciudad donde reside*</label>
+              <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección donde reside*</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+          </div>
+
+          <!-- Teléfonos -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" placeholder="Teléfono">
+            </div>
+            <div class="col-md-6">
+              <label for="celular" class="form-label">Celular*</label>
+              <input type="tel" class="form-control" id="celular" placeholder="Celular" required>
+            </div>
+          </div>
+
+          <!-- Correos Electrónicos -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico*</label>
+            <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmar-email" class="form-label">Confirmar Correo Electrónico*</label>
+            <input type="email" class="form-control" id="confirmar-email" placeholder="confirmar correo@ejemplo.com" required>
+          </div>
+
+          <!-- Sexo -->
+          <div class="mb-3">
+            <label for="sexo" class="form-label">Sexo*</label>
+            <select class="form-select" id="sexo" required>
+              <option selected disabled>- Seleccionar -</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <!-- Grupo Sanguíneo -->
+          <div class="mb-3">
+            <label for="grupo-sanguineo" class="form-label">Grupo Sanguíneo*</label>
+            <select class="form-select" id="grupo-sanguineo" required>
+              <option selected disabled>- Seleccionar -</option>
+              <option value="A+">A+</option>            
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O+">O+</option>
+              <option value="O-">O-</option>
+            </select>
+          </div>
+
+          <!-- Adjuntar documento de identidad -->
+          <div class="mb-3">
+            <label for="documento-identidad" class="form-label">Adjuntar documento de identidad*</label>
+            <input class="form-control" type="file" id="documento-identidad" accept=".txt,.rtf,.pdf,.doc,.docx,.odt,.ppt,.pptx,.odp,.xls,.xlsx,.ods,.jpg" required>
+            <div class="form-text">Máximo 1 fichero, límite de 25 MB, tipos permitidos: txt, rtf, pdf, doc, docx, odt, ppt, pptx, odp, xls, xlsx, ods, jpg.</div>
+          </div>
+
+          <!-- Autorización de tratamientos de datos -->
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="autorizacion-datos" required>
+            <label class="form-check-label" for="autorizacion-datos">Acepto el tratamiento y la Política de Protección de Datos Personales Servicios</label>
+          </div>
+
+          <!-- Botón de envío -->
+          <button type="submit" class="btn btn-outline-success">Registrar</button>
+        </form>
+      </div> 
+
+    </div>
+  </div>
+  <!--fin del main-->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>2024 por Corpoclinic</span></strong>.Todos los derechos reservados
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="#">Armando Ledesma</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top bg-success d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://kit.fontawesome.com/aff82f5e8e.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
