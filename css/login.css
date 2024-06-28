@@ -1,0 +1,75 @@
+/*-----Importación de fuente (Rubik)-----*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*-----Selector universal-----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+/*-----Fin del selector universal-----*/
+
+/*-----Cuerpo de la página (body)-----*/
+body{
+    background-color: #FFFFFF;  
+}
+/*-----Fin del cuerpo de la página (body)-----*/
+
+
+
+/*-----Contenedor del login-----*/
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----Fin del contenedor del login-----*/
+
+/*-----Inicio del box-area-----*/
+.box-area{
+  background-color: #FDFDFF;
+  width: 930px;
+}
+/*-----Fin del box-area-----*/
+
+
+/*-----Cuadro izquierdo (left) del login-----*/
+.caja-izquierda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*-----Fin del cuadro izquierdo (left) del login-----*/
+
+
+/*-----Cuadro derecho (Right) del login-----*/
+.caja-derecha{
+  padding: 40px 30px 40px 40px;
+}
+/*-----Fin del cuadro derecho (Right) del login-----*/
+
+
+/*-----Marcador de posición personalizado-----*/
+::placeholder{
+  font-size: 16px;
+}
+/*-----Fin del marcador de posición personalizado-----*/
+
+
+/*-----Pantallas pequeñas-----*/
+@media only screen and (max-width: 768px) {
+  .box-area{
+    margin: 0 10px;
+  }
+  .caja-izquierda{
+    height: 100px;
+    overflow: hidden;
+  }
+  .caja-derecha{
+    padding: 20px;
+  }
+}
